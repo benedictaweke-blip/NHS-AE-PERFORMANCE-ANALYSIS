@@ -28,6 +28,32 @@ The objective is to transform publicly available NHS operational data into clear
 
 The results indicate that a substantial proportion of Type 1 A&E attendances exceeded four hours during the reporting period. Regional performance also varied, suggesting areas for further investigation into operational pressures, patient demand and service capacity. These descriptive findings do not establish the causes of the observed differences.
 
+## Technical Methodology
+
+### 1. Data Collection
+- Used publicly available NHS England monthly A&E attendance and emergency admission statistics.
+- Defined the reporting period as April 2025 to March 2026.
+- Focused on Type 1 A&E attendance and four-hour performance metrics.
+
+### 2. SQL Analysis
+- Used SQLite to query and examine NHS A&E data.
+- Analysed attendance volumes and four-hour performance.
+- Prepared summary datasets for monthly and regional comparisons.
+
+### 3. Power BI Dashboard
+- Imported prepared CSV datasets into Power BI Desktop.
+- Built a monthly performance line chart and a regional comparison bar chart.
+- Created DAX measures for total attendances, attendances exceeding four hours and annual four-hour performance.
+- Applied consistent formatting and added reporting-period and source information.
+
+### 4. Calculation Method
+
+Annual four-hour performance was calculated as:
+
+**(Total attendances - Attendances exceeding four hours) / Total attendances × 100**
+
+The annual percentage is calculated from the attendance totals rather than an unweighted average of monthly percentages.
+
 ## Power BI Dashboard
 
 ![NHS Type 1 A&E Performance Dashboard](NHS_AE_DASHBOARD.PNG)
