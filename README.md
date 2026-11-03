@@ -37,6 +37,17 @@ The following SQL scripts document the analysis:
 - [Regional Performance](04_ae_regional_performance.sql) — compares performance across NHS regions.
 - [Regional Performance Change](05_ae_regional_performance_change.sql) — compares April 2025 and March 2026 regional performance.
 
+### How to Reproduce the SQL Analysis
+
+1. Download `nhs_ae_monthly_2025_26_clean(1).csv` from this repository.
+2. Open DB Browser for SQLite and create a new SQLite database.
+3. Select **File → Import → Table from CSV file** and import the downloaded dataset.
+4. Name the imported table `ae_monthly_2025_26` and ensure the first row is used as column headers.
+5. Check that attendance and waiting-time columns are stored as numeric values.
+6. Open **Execute SQL** and run the `.sql` scripts provided in this repository.
+
+The scripts analyse monthly trends, rank monthly performance, compare regional performance, and calculate changes between April 2025 and March 2026.
+
 
 ## Technical Methodology
 
