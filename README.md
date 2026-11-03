@@ -28,6 +28,16 @@ The objective is to transform publicly available NHS operational data into clear
 
 The results indicate that a substantial proportion of Type 1 A&E attendances exceeded four hours during the reporting period. Regional performance also varied, suggesting areas for further investigation into operational pressures, patient demand and service capacity. These descriptive findings do not establish the causes of the observed differences.
 
+## SQL Analysis Files
+
+The following SQL scripts document the analysis:
+
+- [Monthly Performance Trend](02_ae_monthly_trend_analysis.sql) — calculates monthly attendance volumes and four-hour performance.
+- [Monthly Performance Ranking](03_ae_monthly_performance_ranking.sql) — ranks months by four-hour performance.
+- [Regional Performance](04_ae_regional_performance.sql) — compares performance across NHS regions.
+- [Regional Performance Change](05_ae_regional_performance_change.sql) — compares April 2025 and March 2026 regional performance.
+
+
 ## Technical Methodology
 
 ### 1. Data Collection
